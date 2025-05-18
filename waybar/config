@@ -1,0 +1,35 @@
+{
+  "custom/clock-toggle": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/clock-toggle.sh",
+    "on-click": "~/.config/waybar/scripts/clock-toggle.sh toggle",
+    "interval": 1
+  },
+
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["custom/clock-toggle", "hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["pulseaudio", "network", "battery", "tray"],
+
+  "battery": {
+    "format": "🔋 {capacity}%"
+  },
+  "network": {
+    "format-wifi": "📶 {essid} ({signalStrength}%)",
+    "format-ethernet": "🔌 Connected",
+    "format-disconnected": "❌ Disconnected",
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "🔇 Muted",
+    "states": {
+      "high": 75,
+      "medium": 25,
+      "low": 0
+    },
+    "format-icons": ["🔈", "🔉", "🔊"],
+    "on-click": "pavucontrol"
+  }
+}
