@@ -1,6 +1,6 @@
 window#waybar.top {
-    background: rgba(0, 0, 0, 0.75);
-    border: 1px solid rgba(155, 155, 155, 0.25);
+    background: rgba(0, 0, 0, 0.50);
+    border: 1px solid rgba(93, 232, 90, 0.25);
     border-radius: 10px;
 }
 
