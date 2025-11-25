@@ -11,7 +11,13 @@
 
         "reload_style_on_change": true,
 
+        "modules-left": ["custom/menu"],
         "modules-center": ["clock"],
+
+        "custom/menu": {
+            "on-click": "~/.config/waybar/scripts/run_terminal.sh",
+            "format": "\udb82\udcc7"
+        },
 
         "clock": {
             "interval": 1,
