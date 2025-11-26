@@ -1,3 +1,5 @@
+/*@import url("colors.css");*/
+
 window#waybar.top {
     background: rgba(0, 0, 0, 0.50);
     border: 1px solid rgba(93, 232, 90, 0.25);
@@ -39,13 +41,7 @@ window#waybar.top {
 
     margin-bottom: 3.5px;
 
+    border: 1px solid rgba(50, 175, 90, 1);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-}
-#workspaces button {
-    color: rgb(255, 255, 255);
-    padding: 0px 5px;
-}
-#workspaces button.active {
-    color: rgba(50, 175, 90, 1);
 }
