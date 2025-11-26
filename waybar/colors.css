@@ -1,0 +1,38 @@
+@define-color background rgb(28, 38, 33);
+@define-color border rgb(36, 80, 57);
+@define-color accent rgb(54, 122, 82);
+@define-color neutral rgb(245, 255, 245);
+
+/* dark (e.g. active), 25% darker */
+@define-color d_background shade(@background, 0.75);
+@define-color d_border shade(@border, 0.75);
+@define-color d_accent shade(@accent, 0.75);
+
+/* hovered, 15% darker */
+@define-color h_background shade(@background, 0.85);
+@define-color h_border shade(@border, 0.85);
+@define-color h_accent shade(@accent, 0.85);
+
+/* lite version of light, 15% lighter (duhhh) */
+@define-color ll_background shade(@background, 1.15);
+@define-color ll_border shade(@border, 1.15);
+@define-color ll_accent shade(@accent, 1.15);
+
+/* light, 25% lighter (captain obvious on the seas) */
+@define-color l_background shade(@background, 1.25);
+@define-color l_border shade(@border, 1.25);
+@define-color l_accent shade(@accent, 1.25);
+
+/*
+rgba(93, 232, 90, 0.25)
+rgba(93, 232, 90, 1)
+rgba(50, 175, 90, 1)
+rgb(55, 156, 54)
+rgb(31, 109, 35)
+rgba(93, 232, 90, 1)
+rgba(50, 175, 90, 1)
+rgb(255, 255, 255);
+rgb(55, 156, 54);
+*/
+
+/*@define-color secondary rgb(48, 77, 48);*/

@@ -1,15 +1,16 @@
-/*@import url("colors.css");*/
+@import url("colors.css");
 
 window#waybar.top {
+    color: @neutral;
     background: rgba(0, 0, 0, 0.50);
-    border: 1px solid rgba(93, 232, 90, 0.25);
+    border: 1px solid alpha(@border, 0.35);
     border-radius: 10px;
 }
 
 #custom-menu {
-    background-color: rgba(93, 232, 90, 1);
+    background-color: @background;
 
-    border: 1px solid rgba(50, 175, 90, 1);
+    border: 1px solid @border;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 
@@ -26,13 +27,13 @@ window#waybar.top {
 }
 
 #custom-menu:hover {
-    background-color: rgb(55, 156, 54);
-    border: 1px solid rgb(31, 109, 35);
+    background-color: @l_background;
+    border: 1px solid @l_border;
     transition: all 150ms 0s ease-in;
 }
 
 #workspaces {
-    background-color: rgba(93, 232, 90, 1);
+    background-color: @background;
 
     font-size: 20px;
 
@@ -41,21 +42,21 @@ window#waybar.top {
 
     margin-bottom: 3.5px;
 
-    border: 1px solid rgba(50, 175, 90, 1);
+    border: 1px solid @border;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 #workspaces button {
-    color: rgb(255, 255, 255);
+    color: @neutral;
     transition: all 125ms ease-out;
     padding: 0px 5px;
     border: none;
 }
 #workspaces button.active {
-    color: rgb(55, 156, 54);
+    color: @accent;
     transition: all 125ms ease-in;
 }
 #workspaces button:hover {
-    text-shadow: -1px 0 rgba(50, 175, 90, 1), 0 1px rgba(50, 175, 90, 1), 1px 0 rgba(50, 175, 90, 1), 0 -1px rgba(50, 175, 90, 1);
+    text-shadow: -1px 0 @accent, 0 1px @accent, 1px 0 @accent, 0 -1px @accent;
     background: none;
 }
