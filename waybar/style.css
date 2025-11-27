@@ -60,3 +60,6 @@ window#waybar.top {
     text-shadow: -1px 0 @accent, 0 1px @accent, 1px 0 @accent, 0 -1px @accent;
     background: none;
 }
+
+#window { margin-left: 5px; }
+window#waybar.empty { color: transparent; }

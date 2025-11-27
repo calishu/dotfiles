@@ -1,5 +1,7 @@
 [
     {
+        // "fixed-center": true,
+
         "name": "top",
         "positon": "top",
         "height": 32,
@@ -11,8 +13,9 @@
 
         "reload_style_on_change": true,
 
-        "modules-left": ["custom/menu", "hyprland/workspaces"],
+        "modules-left": ["custom/menu", "hyprland/workspaces", "hyprland/window"],
         "modules-center": ["clock"],
+        // "modules-right": ["wlr/taskbar"],
 
         "custom/menu": {
             "on-click": "~/.config/waybar/scripts/run_terminal.sh",
@@ -22,6 +25,11 @@
         "hyprland/workspaces": {
             "format": "\uf444",
             "all-outputs": true
+        },
+
+        "hyprland/window": {
+            "format": "\uf105 {initialTitle}",
+
         },
 
         "clock": {
